@@ -1,0 +1,55 @@
+:root {
+  --red: #ff0000;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+  /* Now 1rem = 10px*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+.youtube-logo {
+  background-color: var(--red);
+  width: 30rem; /* 300px */
+  height: 20rem; /* 200px */
+  border-radius: 5rem; /* 50px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.playBtn {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 25%;
+  left: 11rem;
+  border-top: 5rem solid transparent;
+  border-bottom: 5rem solid transparent;
+  border-left: 10rem solid var(--white);
+  z-index: 100;
+}
+
+/* Using Pseudo-class ::before */
+/* .youtube-logo::before {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 11rem;
+  border-top: 5rem solid transparent;
+  border-bottom: 5rem solid transparent;
+  border-left: 10rem solid var(--white);
+  z-index: 50;
+} */
