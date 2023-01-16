@@ -1,0 +1,57 @@
+:root {
+  --red: #ea4335;
+  --blue: #4285f4;
+  --green: #34a853;
+  --yellow: #fbbc05;
+}
+
+html {
+  font-size: 62.5%;
+  /* Now 1rem = 10px*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+.google-logo {
+  position: relative;
+  width: 30rem; /* 300px */
+  height: 30rem;
+  padding: 0;
+  border-top: 10rem solid var(--red); /* 100px */
+  border-right: 10rem solid var(--blue);
+  border-bottom: 10rem solid var(--green);
+  border-left: 10rem solid var(--yellow);
+  border-radius: 50%;
+  background-color: azure;
+}
+
+.google-logo::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -9.5rem; /* -95px */
+  transform: translateY(-50%);
+  width: 24.5rem; /* 245px */
+  height: 10rem;
+  background-color: var(--blue);
+  z-index: 10;
+}
+
+.google-logo::after {
+  content: '';
+  position: absolute;
+  top: -10rem; /* -100px */
+  right: -10rem;
+  width: 0;
+  height: 0;
+  border-top: 20rem solid transparent;
+  border-right: 20rem solid azure;
+}
