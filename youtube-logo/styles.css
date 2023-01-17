@@ -30,6 +30,8 @@ body {
   position: relative;
 }
 
+
+/* Using regular CSS class */
 .playBtn {
   width: 0;
   height: 0;
